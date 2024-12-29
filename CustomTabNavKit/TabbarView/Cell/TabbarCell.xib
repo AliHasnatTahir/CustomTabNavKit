@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outfit-Medium.ttf">
+            <string>Outfit-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabbarCell" id="gTV-IL-0wX" customClass="TabbarCell" customModule="PDF_Editor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qk-OE-etk">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baG-Ea-PdO">
+                                <rect key="frame" x="17.666666666666671" y="10" width="65" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ke-em-DxY">
+                                        <rect key="frame" x="13.333333333333329" y="35.666666666666664" width="38" height="16.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Outfit-Medium" family="Outfit" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-Kl-BSh">
+                                        <rect key="frame" x="16.999999999999993" y="10.333333333333334" width="30.666666666666664" height="26.333333333333329"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.29673372644956419" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5Ke-em-DxY" firstAttribute="centerX" secondItem="baG-Ea-PdO" secondAttribute="centerX" id="25h-kA-UIK"/>
+                                    <constraint firstItem="5Ke-em-DxY" firstAttribute="top" secondItem="NVm-Kl-BSh" secondAttribute="bottom" constant="2" id="LCQ-qU-5xQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ke-em-DxY" secondAttribute="bottom" constant="8" id="PMz-4P-9P5"/>
+                                    <constraint firstItem="NVm-Kl-BSh" firstAttribute="centerX" secondItem="baG-Ea-PdO" secondAttribute="centerX" id="j9p-wC-XP6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="baG-Ea-PdO" firstAttribute="centerY" secondItem="4qk-OE-etk" secondAttribute="centerY" id="3JG-WL-BGN"/>
+                            <constraint firstItem="baG-Ea-PdO" firstAttribute="width" secondItem="4qk-OE-etk" secondAttribute="width" multiplier="0.65" id="Lvc-2O-iWU"/>
+                            <constraint firstItem="baG-Ea-PdO" firstAttribute="height" secondItem="4qk-OE-etk" secondAttribute="height" multiplier="0.75" id="g2g-UJ-puI"/>
+                            <constraint firstItem="baG-Ea-PdO" firstAttribute="centerX" secondItem="4qk-OE-etk" secondAttribute="centerX" id="pmw-0Z-4Af"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4qk-OE-etk" secondAttribute="bottom" id="gvs-cl-zZk"/>
+                <constraint firstAttribute="trailing" secondItem="4qk-OE-etk" secondAttribute="trailing" id="lQN-fs-0J5"/>
+                <constraint firstItem="4qk-OE-etk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rCh-P7-OcB"/>
+                <constraint firstItem="4qk-OE-etk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vDf-1k-Vma"/>
+            </constraints>
+            <size key="customSize" width="100" height="80"/>
+            <connections>
+                <outlet property="image" destination="NVm-Kl-BSh" id="eiB-Mz-GbI"/>
+                <outlet property="mainView" destination="4qk-OE-etk" id="cxO-tz-ZQO"/>
+                <outlet property="nameLbl" destination="5Ke-em-DxY" id="7j4-TU-GHk"/>
+                <outlet property="selectedView" destination="baG-Ea-PdO" id="zYZ-nZ-vNg"/>
+            </connections>
+            <point key="canvasLocation" x="175.57251908396947" y="30.985915492957748"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
